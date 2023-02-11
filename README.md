@@ -1,7 +1,7 @@
 
 # Graphical-Password-Authentication-Prototype
 
-We the team of six developed Graphical Password Authentication System || Smart India Hackathon
+Graphical Password Authentication System
 
 
 
@@ -13,35 +13,31 @@ We the team of six developed Graphical Password Authentication System || Smart I
 
 ## Team ✨
 
-- Saransh Vashisht
+- Rahul Karda
 
-- Sushant Kumar
+- Saksham Gupta
 
-- Sourabh Tripathi
+- Varsha Sharma
 
-- Rahul Kushwaha
-
-- Ramakant Kumar
-
-- Ash Aggarwal
+- Maroof Ansari
 
 
 ## Screenshots📸
 
 
 ### Account creation
-![Account creation](https://github.com/saransh-vashisht/Graphical-Pasword-Authentication-Prototype/blob/main/screenshots/account%20creation.png?raw=true)
+![Account creation]()
 
 ### Login sucess
-![Login sucessful](https://github.com/saransh-vashisht/Graphical-Pasword-Authentication-Prototype/blob/main/screenshots/login%20success.png?raw=true)
+![Login sucessful]()
 
 
 ### Login Failure
-![Login failure](https://github.com/saransh-vashisht/Graphical-Pasword-Authentication-Prototype/blob/main/screenshots/Login%20failed.png?raw=true)
+![Login failure]()
 
 ### Login Failure Notification
-![Login failure notifs](https://github.com/saransh-vashisht/Graphical-Pasword-Authentication-Prototype/blob/main/screenshots/Login%20fail%20notification.png?raw=true)
+![Login failure notifs]()
 
 
 ### Password Reset Notification
-![Password notification](https://github.com/saransh-vashisht/Graphical-Pasword-Authentication-Prototype/blob/main/screenshots/Password%20reset.png?raw=true)
+![Password notification]()
