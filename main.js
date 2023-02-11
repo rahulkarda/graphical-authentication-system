@@ -100,5 +100,5 @@ function sendMail2(){
 
 function NewTab() {
     window.open(
-      "https://rahulkarda.me", "_blank");
+      "route.html", "_blank");
 }
