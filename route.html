@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
+    <style>
+      div {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>User Details</h1>
+      <p id="username"></p>
+      <p id="pass"></p>
+      <p id="passtext"></p>
+    </div>
+  </body>
+  <script>
+    function run() {
+      var passunhashed = sessionStorage.getItem("uppass");
+      var user = sessionStorage.getItem("upname");
+      let username = document.getElementById("username");
+      let password = document.getElementById("pass");
+      let passwordsequence = document.getElementById("passtext");
+      let pass = strhash(passunhashed);
+      username.innerHTML += `Username: ${user}`;
+      password.innerHTML += `Password: ${pass}`;
+      passwordsequence.innerHTML += `Password in sequence: ${passunhashed}`;
+    }
+    run();
+
+    //hashing function
+    function strhash(str) {
+      if (str.length % 32 > 0) str += Array(33 - (str.length % 32)).join("z");
+      var hash = "",
+        bytes = [],
+        i = 0,
+        j = 0,
+        k = 0,
+        a = 0,
+        dict = [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+        ];
+      for (i = 0; i < str.length; i++) {
+        ch = str.charCodeAt(i);
+        bytes[j++] = ch < 127 ? ch & 0xff : 127;
+      }
+      var chunk_len = Math.ceil(bytes.length / 32);
+      for (i = 0; i < bytes.length; i++) {
+        j += bytes[i];
+        k++;
+        if (k == chunk_len || i == bytes.length - 1) {
+          a = Math.floor(j / k);
+          if (a < 32) hash += "0";
+          else if (a > 126) hash += "z";
+          else hash += dict[Math.floor((a - 32) / 2.76)];
+          j = k = 0;
+        }
+      }
+      return hash;
+    }
+  </script>
+</html>
