@@ -79,12 +79,12 @@ function signin() {
 
 var templateParams = {
     to_name: 'User',
-    from_name: 'Rahul',
-    message: 'Please try again!'
+    from_name: 'GRAAS Team',
+    message: 'Someone is attempting to log in to your account, if it was you Please try again!'
   };
 
  function sendMail3(){
-    emailjs.send('service_ktz39ao', 'template_m1h3m8f', templateParams )
+    emailjs.send('service_lu31ilw', 'template_m1h3m8f', templateParams )
     .then(function(res){
         // console.log("Success", res.status);
         alert("mail sent successfully");
