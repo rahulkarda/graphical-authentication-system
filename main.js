@@ -84,7 +84,7 @@ var templateParams = {
   };
 
  function sendMail3(){
-    emailjs.send('service_lu31ilw', 'template_m1h3m8f', templateParams )
+    emailjs.send('service_lu31ilw', 'template_ncxeq0r', templateParams )
     .then(function(res){
         // console.log("Success", res.status);
         alert("mail sent successfully");
